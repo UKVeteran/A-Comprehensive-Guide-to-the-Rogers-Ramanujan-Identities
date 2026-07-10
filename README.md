@@ -8,8 +8,8 @@
     <script>
         window.MathJax = {
             tex: {
-                inlineMath: [['$', '$'], ['\\(', '\\)']],
-                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
             }
         };
     </script>
@@ -199,14 +199,14 @@
 <hr>
 
 <h2>🔢 The Identities</h2>
-<p>The identities are typically expressed in terms of $q$-series, where $|q| < 1$. We use the standard $q$-Pochhammer symbol notation:</p>
-<p>$$(a; q)_n = \prod_{k=0}^{n-1} (1 - aq^k)$$</p>
+<p>The identities are typically expressed in terms of \(q\)-series, where \(|q| < 1\). We use the standard \(q\)-Pochhammer symbol notation:</p>
+<p>\[(a; q)_n = \prod_{k=0}^{n-1} (1 - aq^k)\]</p>
 
 <h3>The First Rogers-Ramanujan Identity</h3>
-<p>$$ \sum_{n=0}^{\infty} \frac{q^{n^2}}{(q; q)_n} = \prod_{j=0}^{\infty} \frac{1}{(1-q^{5j+1})(1-q^{5j+4})} $$</p>
+<p>\[ \sum_{n=0}^{\infty} \frac{q^{n^2}}{(q; q)_n} = \prod_{j=0}^{\infty} \frac{1}{(1-q^{5j+1})(1-q^{5j+4})} \]</p>
 
 <h3>The Second Rogers-Ramanujan Identity</h3>
-<p>$$ \sum_{n=0}^{\infty} \frac{q^{n^2+n}}{(q; q)_n} = \prod_{j=0}^{\infty} \frac{1}{(1-q^{5j+2})(1-q^{5j+3})} $$</p>
+<p>\[ \sum_{n=0}^{\infty} \frac{q^{n^2+n}}{(q; q)_n} = \prod_{j=0}^{\infty} \frac{1}{(1-q^{5j+2})(1-q^{5j+3})} \]</p>
 
 <hr>
 
@@ -224,13 +224,13 @@
     <tbody>
         <tr>
             <td><strong>First</strong></td>
-            <td>Number of partitions of $n$ such that the difference between any two consecutive parts is at least 2.</td>
-            <td>Number of partitions of $n$ into parts congruent to $1$ or $4 \pmod 5$.</td>
+            <td>Number of partitions of \(n\) such that the difference between any two consecutive parts is at least 2.</td>
+            <td>Number of partitions of \(n\) into parts congruent to \(1\) or \(4 \pmod 5\).</td>
         </tr>
         <tr>
             <td><strong>Second</strong></td>
-            <td>Number of partitions of $n$ such that the difference between any two consecutive parts is at least 2, and the part 1 is not allowed.</td>
-            <td>Number of partitions of $n$ into parts congruent to $2$ or $3 \pmod 5$.</td>
+            <td>Number of partitions of \(n\) such that the difference between any two consecutive parts is at least 2, and the part 1 is not allowed.</td>
+            <td>Number of partitions of \(n\) into parts congruent to \(2\) or \(3 \pmod 5\).</td>
         </tr>
     </tbody>
 </table>
@@ -268,7 +268,7 @@ cd rogers-ramanujan</code></pre>
 <pre><code class="language-bash">python src/series_expansion.py --terms 50</code></pre>
 
 <h3>Example Output</h3>
-<p>The script <code>series_expansion.py</code> expands both sides of the identities to visually confirm they match up to $O(q^N)$.</p>
+<p>The script <code>series_expansion.py</code> expands both sides of the identities to visually confirm they match up to \(O(q^N)\).</p>
 
 <pre><code class="language-python"># Output for the First Identity up to 10 terms
 Series Side:  1 + q + q^2 + q^3 + 2q^4 + 2q^5 + 3q^6 + 3q^7 + 4q^8 + 5q^9 + 6q^10
@@ -294,7 +294,7 @@ Match: TRUE</code></pre>
 <p>Distributed under the MIT License. See <code>LICENSE</code> for more information.</p>
 
 <div class="footer">
-    <blockquote>"An equation for me has no meaning, unless it expresses a thought of God." — Srinivasa Ramanujan Blockquote</blockquote>
+    <blockquote>"An equation for me has no meaning, unless it expresses a thought of God." — Srinivasa Ramanujan</blockquote>
 </div>
 
 </body>
