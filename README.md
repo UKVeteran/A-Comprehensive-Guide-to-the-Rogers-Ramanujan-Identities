@@ -10,7 +10,7 @@
 
 ## 📖 Overview
 
-This repository serves as a comprehensive guide and computational toolkit for the **Rogers-Ramanujan Identities**—two of the most remarkable and deep results in the theory of integer partitions and basic hypergeometric series.
+This repository serves as a comprehensive guide and computational toolkit for the **Rogers-Ramanujan Identities**, two of the most remarkable and deep results in the theory of integer partitions and basic hypergeometric series.
 
 Discovered first by L. J. Rogers in 1894, famously rediscovered by Srinivasa Ramanujan in 1913, and independently proved by Issai Schur in 1917, these identities bridge analytical number theory, combinatorics, and even statistical mechanics.
 
